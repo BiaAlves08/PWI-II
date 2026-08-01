@@ -24,9 +24,10 @@ if(is_int($a)) {
 }
 
 /* Checando números inteiros 
-
-
-*/
+Validar números inteiros com a função is_int();
+Se o número for inteiro = true (tipo de dado);
+Se não for inteiro = false (tipo de dado);
+Precisa utilizar o IF para validar o valor; */
 
 ?>
 
