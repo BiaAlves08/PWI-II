@@ -241,10 +241,12 @@ $nome = $email = $assunto = $mensagem = '';
             class="<?= isset($erros['mensagem']) ? 'invalido' : '' ?>"
             ><?= htmlspecialchars($mensagem, ENT_QUOTES, 'UTF-8') ?></textarea>
             <?php if (isset($erros['mensagem'])): ?>
-
+                <div class="erro"><?= $erros['mensagem'] ?></div>
+                <?php endif; ?>
         </div>
 
-
-    
+        <button type="submit">Enviar mensagem</button>
+            </form>
+            </div>
 </body>
 </html>
