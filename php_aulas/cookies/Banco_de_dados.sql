@@ -1,4 +1,5 @@
 create database cookies;
+use cookies;
 
 show tables;
 
