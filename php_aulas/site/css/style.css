@@ -1,0 +1,134 @@
+/*====================================================
+1. IMPORTAÇÃO DE FONTES EXTERNAS (Google Fonts)
+====================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Isometra&family=Playwrite+AR:wght@100..400&display=swap');
+
+/*===================================================
+2. REGRAS GERAIS E RESET 
+===================================================== */
+/* Garante que 'padding' e 'border' não alterem a largura total dos elementos */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Isometra Static', sans-serif; /* Fonte padrão para textos corridos */
+}
+
+/* Tipografia padronizada para todos os títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playwrite Argentina', sans-serif;
+    letter-spacing: 1.5px; /*Espaçamento entre letras para dar destaque */
+}
+
+/* Tornar as imagens totalmente responsivas */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*=================================================
+3. CABEÇALHO E ESTRUTURA PRINCIPAL (LAYOUT BASE - MOBILE)
+=================================================== */
+.header {
+    height: 60px;
+}
+
+/* Alinha o logotipo e o botão de menu nas extremidades do cabeçalho */
+.conteudo {
+    margin: auto;
+    width: 99%;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.logo, .icon-menu {
+    margin: 5px;
+    color: #fff;
+}
+
+/* Botão de abrir/fechar o menu em dispositivos móveis (Hamburguer) */
+.icon-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #fba919;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/*=================================================================
+4. NAVEGAÇÃO E MENU RESPONSIVO (OFF-CANVAS)
+================================================================== */
+/* Esconde o menu fora da área visível do ecrã no lado esquerdo */
+.nav {
+position: absolute;
+top: 60px;
+left: -100%;
+width: 100%;
+transition: all 0.4s; /* Transição suave ao abrir/fechar */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_link {
+    display: block;
+    padding: 15px;
+    background: #fba919;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estado de foco/hover dos links e página selecionada */
+.menu_link:hover, .select {
+    background: white;
+    color: #fba919;
+}
+
+/* Classe alternada via JS para exibir o menu em ecrãs pequenos */
+.mostrar {
+    left: 0%;
+}
+
+/* ==============================================================
+5. SECÇÃO BANNER (DESTAQUE PRINCIPAL)
+================================================================ */
+.banner {
+    margin-top: -60px; /* Coloca o banner por trás do cabeçalho transparente */
+    z-index: -100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Centraliza o texto sobre a imagem de banner */
+.banner, .conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.banner_titulo {
+    font-size: 25px;
+}
+ /* Esconde o texto secundário do banner em telemóveis muito pequenos */
+ .banner_txt {
+    display: none;
+ }
+
+ /*
