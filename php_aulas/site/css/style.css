@@ -352,5 +352,34 @@ cursor:pointer;
         text-align: center;
     }
 
-    .cursos_
+    .cursos_descricao{
+        padding:20px;
+    }
+
+    .cursos_titulo{
+        font-size: 50px;
+    }
+
+    .cursos_txt{
+        font-size: 20px;
+    }
+}
+
+@media(min-width:128px){
+    .conteudo{
+        width: 1200px;
+        margin:0 auto;
+    }
+
+    .logo{
+        font-size: 60px;
+    }
+
+    .banner .conteudo{
+        top:40%;
+    }
+
+    .info{
+        margin-top: -220px;
+    }
 }
