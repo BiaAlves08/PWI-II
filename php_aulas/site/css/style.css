@@ -125,11 +125,115 @@ margin:0;
 }
 
 .banner_titulo {
-    font-size: 25px;
+    font-size: 50px;
+    text-align: center;
 }
 
 /*Esconde o texto secundário do banner em telemóveis muito pequenos*/
 .banner_txt{
     display:none;
 }
-/*
+
+.info_coluna{
+    background: #FBA919;
+    color: #FFF;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.cursos_coluna {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.cursos_descricao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FFF;
+    background: rgba(0,0,0,0.6);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+
+.cursos_titulo {
+    font-size: 25px;
+}
+
+.section_titulo {
+    text-align: center;
+    font-size: 35px;
+    color: #FBA919;
+}
+
+.footer {
+    background: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.social [class^=icon-]{
+    display:inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+}
+
+.icon-email {
+    margin-bottom: -7px;
+}
+
+.imgcontato {
+    margin-top: 70px;
+}
+
+.login {
+    margin: 80px auto;
+    background: #e3e3e3;
+    border-radius: 10px #000;
+    padding: 15px;   
+}
+
+.login h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #7c7c7c;
+}
+
+/*Aplicando media query para sites responsivos*/
+@media(min-width:480px){
+    .logo{
+        font-size: 40px;
+    }
+
+    .banner_titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+
+    .banner_txt {
+        display:block;
+        font-size: 16px;
+        margin: 7px 0;
+    }
+}
+
+.info, .cursos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+}
+
+.info_coluna {
+    width: 32%;
+    
+}
+
